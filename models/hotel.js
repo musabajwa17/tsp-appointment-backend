@@ -18,7 +18,7 @@ const RoomSchema = new mongoose.Schema({
     required: true
   },
   price: {
-    type: String,  // because your price has "$800 / Night"
+    type: String,
     required: true
   },
   images: {
