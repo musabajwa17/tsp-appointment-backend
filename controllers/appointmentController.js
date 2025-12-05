@@ -3,10 +3,20 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 import { sendResponse } from "../utils/response.js";
 
 export const createAppointment = asyncHandler(async (req, res) => {
-  const { name, email, phone, hotelId, date, notes } = req.body;
+  const {
+    firstName,
+    lastName,
+    email,
+    phone,
+    type,
+    room,
+    checkIn,
+    checkOut,
+    message
+  } = req.body;
 
-  // 🔸 Basic validation
-  if (!name || !email || !hotelId || !date) {
+  // 🔸 Basic validation (ruthless & strict)
+  if (!firstName || !lastName || !email || !phone || !type || !room || !checkIn || !checkOut) {
     return sendResponse(
       res,
       false,
@@ -18,12 +28,15 @@ export const createAppointment = asyncHandler(async (req, res) => {
 
   // 🔸 Create appointment document
   const appointment = await Appointment.create({
-    name,
+    firstName,
+    lastName,
     email,
     phone,
-    hotelId,
-    date,
-    notes,
+    type,
+    room,
+    checkIn,
+    checkOut,
+    message
   });
 
   return sendResponse(

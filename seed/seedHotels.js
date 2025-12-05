@@ -15,32 +15,32 @@ const seedHotels = async () => {
     // Insert new hotels
     await Hotel.insertMany([
       {
-        name: "Pearl Continental",
-        location: "Lahore",
-        price: 20000,
-        rating: 4.5,
-        images: ["/img/hotel1_1.jpg", "/img/hotel1_2.jpg"],
-        availableRooms: 10,
-        description: "Luxury stay with modern amenities"
+        name: "Deluxe Rooms",
+        guest: "2 Guests",
+        bath: "2 Baths",
+        beds: "2 Beds", 
+        price: "$800 / Night",
+        images: "https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg",
+        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
       },
       {
-        name: "Serena Hotel",
-        location: "Islamabad",
-        price: 18000,
-        rating: 4.2,
-        images: ["/img/hotel2_1.jpg", "/img/hotel2_2.jpg"],
-        availableRooms: 8,
-        description: "Premium rooms with excellent service"
+        name: "Junior Rooms",
+        guest: "2 Guests",
+        bath: "1 Baths",
+        beds: "2 Beds", 
+        price: "$400 / Night",
+        images: "https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg",
+        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
       },
       {
-        name: "Pearl Continental Karachi",
-        location: "Karachi",
-        price: 22000,
-        rating: 4.6,
-        images: ["/img/hotel3_1.jpg", "/img/hotel3_2.jpg"],
-        availableRooms: 12,
-        description: "Beachside luxury experience"
-      }
+        name: "Family Rooms",
+        guest: "2 Guests",
+        bath: "2 Baths",
+        beds: "1 Beds", 
+        price: "$600 / Night",
+        images: "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg",
+        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+      },
     ]);
 
     console.log("🌱 Hotels Seeded Successfully");

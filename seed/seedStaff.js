@@ -17,20 +17,22 @@ const seedStaff = async () => {
       {
         name: "Ali Ahmed",
         title: "Manager",
-        bio: "Ali manages hotel operations with 10 years of experience.",
-        photo: "/img/team1.jpg"
+        photo: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=400&auto=format&fit=crop"
       },
       {
         name: "Sara Khan",
         title: "Receptionist",
-        bio: "Sara ensures guests have a comfortable stay.",
-        photo: "/img/team2.jpg"
+        photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop"
       },
       {
         name: "Omar Farooq",
         title: "Chef",
-        bio: "Omar specializes in gourmet cuisine for hotel restaurants.",
-        photo: "/img/team3.jpg"
+        photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        name: "Micheal Odean",
+        title: "Supervisor",
+        photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop"
       }
     ]);
 
